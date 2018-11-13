@@ -12,7 +12,8 @@ const fetchUserById = (userId) => {
         replacements: params,
         type: DbConnection().QueryTypes.SELECT,
       }).catch((error) => {
-      throw new DBError(error);
+      // throw new DBError(error);
+      console.log(error);
     });
 };
 
